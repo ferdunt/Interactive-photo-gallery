@@ -28,7 +28,7 @@ $('#phrase').on("keyup", function () {
 
     // Show all the images that passes the previous evaluation
     $.each(output, function () {
-        $(this).fadeIn(600);
+        $(this).show();
     });
 
 });
