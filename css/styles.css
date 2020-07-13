@@ -35,7 +35,13 @@ input[type="text"] {
 }
 
 .gallery {
+  float: left;
   padding: 1em;
+  width: 50%;
+}
+
+.gallery:hover {
+  opacity: 0.85;
 }
 
 .search {
@@ -49,6 +55,9 @@ input[type="text"]:focus {
   border: 2px solid #adadad;
 }
 
+.topClose {
+  margin-bottom: 15px;
+}
 /* ----------MEDIA QUERIES--------------- */
 @media (min-width: 768px) {
   .container {
@@ -57,7 +66,6 @@ input[type="text"]:focus {
   }
 
   .gallery {
-    float: left;
     width: 33.33%;
     padding: 1.5em;
   }
@@ -83,4 +91,44 @@ input[type="text"]:focus {
   .search {
     width: 35%;
   }
+
+  .topClose {
+    margin-right: 230px;
+  }
+
+  .lb-nav a.lb-next {
+    position: relative;
+    left: 70px;
+    opacity: 1;
+  }
+
+  .lb-nav a.lb-prev {
+    position: relative;
+    left: -70px;
+    opacity: 1;
+  }
+}
+
+/* ----------- PLUGIN UPDATES --------------- */
+.lightbox .lb-image {
+  border: none;
+}
+
+.bottomCaption {
+  margin-top: 40px;
+}
+
+.lb-data .lb-details {
+  width: 100%;
+  text-align: center;
+}
+
+.lb-data .lb-caption {
+  font-size: 18px;
+  line-height: 1.3em;
+}
+
+.lightboxOverlay {
+  background-color: #3c3c3c;
+  opacity: 0.94;
 }
